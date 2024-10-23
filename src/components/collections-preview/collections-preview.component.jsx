@@ -31,6 +31,7 @@ const CollectionPreview = (props) => {
               className="img__small"
               style={{ left: "50%", top: "12%", opacity: "1" }}
               id="1"
+               loading="lazy"
             />
             <img
               alt=""
@@ -38,6 +39,7 @@ const CollectionPreview = (props) => {
               className="img__large"
               style={{ left: "45%", bottom: "10%", opacity: "0" }}
               id="3"
+               loading="lazy"
             />
             <img
               alt=""
@@ -45,6 +47,7 @@ const CollectionPreview = (props) => {
               className="img__large"
               style={{ right: "45%", top: "-10%", opacity: "0" }}
               id="3"
+               loading="lazy"
             />
             <img
               alt=""
@@ -52,6 +55,7 @@ const CollectionPreview = (props) => {
               className="img__small"
               style={{ bottom: "20%", left: "20%", opacity: "1" }}
               id="1"
+               loading="lazy"
             />
             <img
               alt=""
@@ -59,6 +63,7 @@ const CollectionPreview = (props) => {
               className="img__small"
               style={{ bottom: "20%", left: "20%", opacity: "0" }}
               id="5"
+               loading="lazy"
             />
             <img
               alt=""
@@ -66,6 +71,7 @@ const CollectionPreview = (props) => {
               className="img__small"
               style={{ left: "50%", top: "12%", opacity: "0" }}
               id="5"
+               loading="lazy"
             />
           </div>
 
@@ -98,6 +104,7 @@ const CollectionPreview = (props) => {
                 opacity: "1",
               }}
               id="1"
+               loading="lazy"
             />{" "}
             <img
               alt=""
@@ -105,6 +112,7 @@ const CollectionPreview = (props) => {
               className="img__large"
               style={{ right: "35%", top: "10%", opacity: "0" }}
               id="3"
+               loading="lazy"
             />
             <img
               alt=""
@@ -117,6 +125,7 @@ const CollectionPreview = (props) => {
                 opacity: "0",
               }}
               id="5"
+               loading="lazy"
             />
           </div>
         </div>
