@@ -1,0 +1,243 @@
+@import "../../scss/variables.styles.scss";
+@import "../../scss/mixins.scss";
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-wrapper {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: $color-bg;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-wrapper {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: $color-bg;
+  position: relative;
+}
+
+.parallax-bg {
+  background-attachment: fixed; // Adds parallax effect
+  background-size: cover;
+  background-position: center; // Ensures background is centered
+  background-repeat: no-repeat;
+}
+
+.react-before-after-slider .slider__delimiter {
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    background-color: $color-primary;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.6); // Glow effect
+    transform: scale(1.1); // Adds a slight scale on hover
+  }
+}
+
+.hero {
+  min-height: 42vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+
+  @include respond(phone) {
+    min-height: 60vh;
+  }
+
+  &__content {
+    position: absolute;
+    top: 35%; // Adjusted for better centering
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 5; // Ensure text is on top of everything
+    width: 90%; // Ensure text doesn't overflow on small screens
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+    padding: 2rem;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+    animation-delay: 0.3s; // Delayed for dramatic effect
+
+    @include respond(tab-port) {
+        width: 80%;
+    }
+
+    @include respond(phone) {
+      top: 46%;
+    }
+  }
+
+  &__title {
+    font-size: clamp(2rem, 5vw, 4rem); // Fluid typography
+    font-weight: bold;
+    color: $color-white-secondary;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); // Added text shadow for contrast
+
+    @include respond(phone) {
+      font-size: 6vw;
+    }
+  }
+
+  &__sub {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    color: $color-white-secondary;
+    margin-top: 0.5rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); // Added text shadow for contrast
+
+    @include respond(phone) {
+      font-size: 4vw;
+      padding: 0 5vw;
+    }
+  }
+
+  &__cta {
+    display: inline-block;
+    background-color: $color-primary;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.1); // Subtle shadow for depth
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 0;
+      border-radius: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: transform 0.5s, opacity 0.5s;
+    }
+
+    &:active:after {
+      transform: translate(-50%, -50%) scale(10);
+      opacity: 0;
+    }
+
+    &:hover {
+      background-color: darken($color-primary, 10%);
+      transform: scale(1.05); // Subtle scaling effect on hover
+      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3); // Glow on hover
+    }
+  }
+
+  &__before-after-slider {
+    width: 90%;
+    max-width: 1200px;
+    margin: 4rem auto;
+    z-index: 1;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden; // Ensure the images don't overflow
+  
+    &:hover {
+      transform: translateY(-10px); // Lift on hover for depth
+    }
+  
+    @include respond(phone) {
+      width: 95%;
+      margin: 2rem auto;
+      margin-top: 160px;
+      max-width: none; // Remove the max-width on small screens for full-width effect
+      text-align: center; // Center the slider content
+    }
+  
+    .slider-label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.5rem;
+      color: rgba(255, 255, 255, 0.8); // Slightly transparent white
+      background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      z-index: 10; // Ensure label is on top of the slider
+      animation: fadeIn 1s ease-in-out;
+  
+      &.before {
+        left: 5%; // Position to the left for 'Before'
+      }
+  
+      &.after {
+        right: 5%; // Position to the right for 'After'
+      }
+    }
+  
+    .react-before-after-slider__image {
+      transition: transform 0.8s ease-in-out; // Smooth image transition
+    }
+  
+    .slider__delimiter {
+      background-color: $color-primary;
+      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.6); // Adds a glow effect
+      width: 3px;
+      height: 100%;
+      transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  
+      &:hover {
+        transform: scale(1.1); // Adds scaling on hover
+        box-shadow: 0 4px 16px rgba(0, 123, 255, 0.8);
+      }
+  
+      &::before {
+        //content: url('/path-to-custom-arrow.svg'); // Custom delimiter arrow (optional)
+        display: block;
+        width: 20px;
+        height: auto;
+        margin: 0 auto;
+        opacity: 0.8; // Slightly transparent
+        transition: opacity 0.3s;
+      }
+    }
+  }
+
+  &__slider {
+    width: 100%;
+    padding-top: 8vh;
+
+    @include respond(tab-port) {
+      padding-top: 4vw;
+    }
+
+    @include respond(phone) {
+      padding-top: 4vh;
+    }
+  }
+}

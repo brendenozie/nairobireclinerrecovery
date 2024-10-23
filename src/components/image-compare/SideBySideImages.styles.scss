@@ -1,0 +1,45 @@
+@import "../../scss/variables.styles.scss";
+@import "../../scss/mixins.scss";
+
+.side-by-side-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+
+  // Responsive behavior
+  @media (max-width: 768px) {
+    flex-direction: column; // stack images and description vertically
+    gap: 10px;
+  }
+
+  .image-container {
+    flex: 1;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .description-container {
+    max-width: 300px;
+    padding: 0 20px;
+    text-align: center;
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #333;
+
+      // Reduce font size on small screens
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+    }
+  }
+}

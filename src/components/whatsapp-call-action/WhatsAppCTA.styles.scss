@@ -1,0 +1,30 @@
+@import "../../scss/variables.styles.scss";
+@import "../../scss/mixins.scss";
+
+.whatsapp-cta {
+  text-align: center;
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background-color: #1EBB60;
+    }
+  }
+}
