@@ -65,7 +65,7 @@ const CitiesSlider = ({ slides = [] }) => {
                 Discover Our Collections
               </Link> */}
               <WhatsAppCTA  className="slider__slide-readmore"
-          phoneNumber="1234567890"
+          phoneNumber="+254799571567"
           message="Hello, I would like to inquire about your services."
         />
             </div>
