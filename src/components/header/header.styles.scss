@@ -18,6 +18,8 @@
 
   @include respond(phone) {
     height: 20vw;
+    height: 17vh;
+    padding-top: 21px;
   }
 
   &__logo {
