@@ -15,7 +15,7 @@ const ReclinerServices = () => {
       </header>
       
       <section className="services">
-        <h2>Our Services in Nairobi</h2>
+        <h2>Our Services</h2>
         <ul className="service-list">
           <li>🛋️ Washing and Refilling</li>
           <li>🛠️ Refurbishing</li>
