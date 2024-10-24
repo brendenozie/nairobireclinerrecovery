@@ -4,6 +4,7 @@ import Hero from "../components/hero/hero.component";
 import LazyVideo from "../components/lazy-video/LazyVideo.component";
 import { imgAbout1, imgAbout2, imgEthos1, imgEthos2 } from "../assets/assets";
 import CollectionPreview from "../components/collections-preview/collections-preview.component";
+import ReclinerServices from "../components/recliner-services/recliner-services.component";
 import SideBySideImages from "../components/image-compare/SideBySideImages.component";
 import WhatsAppCTA from "../components/whatsapp-call-action/WhatsAppCTA.component";
 import BeforeAfterSlider from "../components/BeforeAfterSliderr/BeforeAfterSliderr.component";
@@ -70,13 +71,15 @@ const HomePage = ({ setModalHidden }) => {
       </section>
 
       <section className="section__newsletter">
-        <p className="title">How We Do IT</p>
+        <p className="title">Don't throw your used sofas away</p>
         <h2 className="title__sub">
-          <span>Watch</span> transform into quality
+          <span>Watch</span> us transform them for you
         </h2>
         <LazyVideo poster={BeforeImage1} alt="Exercise Video" />
       </section>
       
+      <ReclinerServices />
+
 
       <CollectionPreview />
 
@@ -163,7 +166,7 @@ const HomePage = ({ setModalHidden }) => {
               description="This is a comparison between the two images."
               />
 
-        <section className="section__newsletter">
+      <section className="section__newsletter">
         <p className="title">contact</p>
         <h2 className="title__sub">
           <span>Reach Out</span> on Whatsapp
@@ -176,13 +179,13 @@ const HomePage = ({ setModalHidden }) => {
         </form>
       </section>
       
-        <SideBySideImages 
-            img1={BeforeImage5}
-              img2={AfterImage6}
-              alt1="First Image"
-              alt2="Second Image"
-              description="This is a comparison between the two images."
-              />
+      <SideBySideImages 
+          img1={BeforeImage5}
+            img2={AfterImage6}
+            alt1="First Image"
+            alt2="Second Image"
+            description="This is a comparison between the two images."
+            />
 
       <section className="section__newsletter">
         <p className="title">contact</p>
@@ -248,17 +251,17 @@ const HomePage = ({ setModalHidden }) => {
                   />
 
         <section className="section__newsletter">
-        <p className="title">contact</p>
-        <h2 className="title__sub">
-          <span>Reach Out</span> on Whatsapp
-        </h2>
-        <form action="" className="newsletter__form">
-          <WhatsAppCTA 
-            phoneNumber="+254799571567"
-            message="Hello, I would like to inquire about your services."
-          />
-        </form>
-      </section>
+          <p className="title">contact</p>
+          <h2 className="title__sub">
+            <span>Reach Out</span> on Whatsapp
+          </h2>
+          <form action="" className="newsletter__form">
+            <WhatsAppCTA 
+              phoneNumber="+254799571567"
+              message="Hello, I would like to inquire about your services."
+            />
+          </form>
+        </section>
         
        <SideBySideImages 
                 img1={BeforeImage11}
