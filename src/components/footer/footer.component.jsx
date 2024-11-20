@@ -13,27 +13,27 @@ const Footer = () => (
       <div className="footer__group">
         <img src={logo} alt="logo" className="footer__logo" />
         <div className="footer__socials">
-          <Link to="/#" className="footer__socials--link">
+          <Link to="https://web.facebook.com/p/Nairobi-Recliners-recovery-and-repairs-100064750723895/?_rdc=1&_rdr" className="footer__socials--link">
             <img
               src={facebook}
               alt="facebook"
               className="footer__socials--img"
             />
           </Link>
-          <Link to="/#" className="footer__socials--link">
+          <Link to="https://www.instagram.com/recliners_repairs_ke/" className="footer__socials--link">
             <img
               src={Instagram}
-              alt="facebook"
+              alt="Instagram"
               className="footer__socials--img"
             />
-          </Link>
-          <Link to="/#" className="footer__socials--link">
+          </Link>          
+          {/* <Link to="/#" className="footer__socials--link">
             <img
               src={Pinterest}
               alt="facebook"
               className="footer__socials--img"
             />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

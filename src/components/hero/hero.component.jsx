@@ -25,22 +25,22 @@ import AfterImage16 from "../../assets/img/16br.jpeg";
 
 const slides = [
   {
-    city: 'Nairobi Recliners and Recovery',
+    city: 'RECLINER.REPAIR.NAIROBI',
     country: 'Before',
     img: BeforeImage11,
   },
   {
-    city: 'Nairobi Recliners and Recovery',
+    city: 'RECLINER.REPAIR.NAIROBI',
     country: 'After',
     img: AfterImage12,
   },
   {
-    city: 'Nairobi Recliners and Recovery',
+    city: 'RECLINER.REPAIR.NAIROBI',
     country: 'Before',
     img: BeforeImage11,
   },
   {
-    city: 'Nairobi Recliners and Recovery',
+    city: 'RECLINER.REPAIR.NAIROBI',
     country: 'After',
     img: AfterImage12,
   },

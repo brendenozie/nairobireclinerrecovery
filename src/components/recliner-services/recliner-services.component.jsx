@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 import "./recliner-services.styles.scss";
 
@@ -17,11 +17,21 @@ const ReclinerServices = () => {
       <section className="services">
         <h2>Our Services</h2>
         <ul className="service-list">
-          <li>🛋️ Washing and Refilling</li>
-          <li>🛠️ Refurbishing</li>
-          <li>🪑 Refilling Only</li>
-          <li>🎨 Cover Changing and Refilling</li>
-          <li>🔧 Sofa Servicing and Mechanism Maintenance</li>
+        <li>
+            <Link to="washing-and-refilling" smooth={true} duration={500}>🛋️ Washing and Refilling</Link>
+          </li>
+          <li>
+            <Link to="refurbishing" smooth={true} duration={500}>🛠️ Refurbishing</Link>
+          </li>
+          <li>
+            <Link to="refilling-only" smooth={true} duration={500}>🪑 Refilling Only</Link>
+          </li>
+          <li>
+            <Link to="cover-changing" smooth={true} duration={500}>🎨 Cover Changing and Refilling</Link>
+          </li>
+          <li>
+            <Link to="sofa-servicing" smooth={true} duration={500}>🔧 Sofa Servicing and Mechanism Maintenance</Link>
+          </li>    
         </ul>
       </section>
 

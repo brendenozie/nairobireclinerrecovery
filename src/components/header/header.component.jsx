@@ -40,9 +40,12 @@ const Header = (props) => {
         <Link to="/#" className="header__item anim__hide ">
           Home
         </Link>
-        {/* <Link to="/collections" className="header__item anim__hide">
-          Collection
-        </Link> */}
+        <Link to="https://web.facebook.com/p/Nairobi-Recliners-recovery-and-repairs-100064750723895/?_rdc=1&_rdr" className="header__item anim__hide">
+          Facebook
+        </Link>
+        <Link to="https://www.instagram.com/recliners_repairs_ke/" className="header__item anim__hide">
+          Instagram
+        </Link>
         <Link to="/#" className="header__item anim__hide">
           About
         </Link>
@@ -114,15 +117,24 @@ const Header = (props) => {
                 Home
               </h2>
             </Link>
-            {/* <Link to="/collections" className="menu-link">
+            <Link to="https://web.facebook.com/p/Nairobi-Recliners-recovery-and-repairs-100064750723895/?_rdc=1&_rdr" className="menu-link">
               <h2
                 id="2"
                 className="menu-nav__link"
                 onClick={menuAnimation.toggleMenu}
               >
-                Collection
+                Facebook
               </h2>
-            </Link> */}
+            </Link>
+            <Link to="https://www.instagram.com/recliners_repairs_ke/" className="menu-link">
+              <h2
+                id="2"
+                className="menu-nav__link"
+                onClick={menuAnimation.toggleMenu}
+              >
+                Instagram
+              </h2>
+            </Link>
             <Link to="/#" className="menu-link">
               <h2 id="3" className="menu-nav__link">
                 About

@@ -8,7 +8,7 @@ import "./SideBySideImages.styles.scss";
 import SlickSlider from "../slider/slider.component";// Assuming your SlickSlider component exists
 
 
-const SideBySideImages = ({ img1, img2, alt1, alt2, description }) => {
+const SideBySideImages = ({id, img1, img2, alt1, alt2, description }) => {
   return (
     <div className="side-by-side-images">
       <div className="image-container">
@@ -32,7 +32,7 @@ const SideBySideImages = ({ img1, img2, alt1, alt2, description }) => {
       <div className="image-container">
         <img src={img2} alt={alt2} loading="lazy" />
       </div>
-    </div>
+    </div >
   );
 };
 

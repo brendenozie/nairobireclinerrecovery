@@ -96,15 +96,18 @@ const HomePage = ({ setModalHidden }) => {
         </form>
       </section>
 
-      <SideBySideImages
-        img1={BeforeImage1}
-        img2={AfterImage2}
-        alt1="Before Image"
-        alt2="After Image"
-        description="This is a comparison between the two images."
-        img1Attributes={{ loading: 'lazy', className: 'img-fluid', alt: 'Before Image' }}  // Adding lazy loading and custom attributes
-        img2Attributes={{ loading: 'lazy', className: 'img-fluid', alt: 'After Image' }}
-      />
+      <section id="washing-and-refilling">
+        <SideBySideImages
+          id="washing-and-refilling"
+          img1={BeforeImage1}
+          img2={AfterImage2}
+          alt1="Before Image"
+          alt2="After Image"
+          description="This is a comparison between the two images."
+          img1Attributes={{ loading: 'lazy', className: 'img-fluid', alt: 'Before Image' }}  // Adding lazy loading and custom attributes
+          img2Attributes={{ loading: 'lazy', className: 'img-fluid', alt: 'After Image' }}
+        />
+      </section>
 
       <section className="section__ethos anim-content">
         <div className="ethos__content">
@@ -158,13 +161,15 @@ const HomePage = ({ setModalHidden }) => {
         </form>
       </section>
 
-      <SideBySideImages 
+      <section id="refurbishing">
+        <SideBySideImages id="refurbishing"
             img1={BeforeImage15}
               img2={AfterImage16}
               alt1="First Image"
               alt2="Second Image"
               description="This is a comparison between the two images."
               />
+        </section>
 
       <section className="section__newsletter">
         <p className="title">contact</p>
@@ -179,13 +184,15 @@ const HomePage = ({ setModalHidden }) => {
         </form>
       </section>
       
-      <SideBySideImages 
-          img1={BeforeImage5}
-            img2={AfterImage6}
-            alt1="First Image"
-            alt2="Second Image"
-            description="This is a comparison between the two images."
-            />
+      <section id="refilling-only">
+        <SideBySideImages  id="refilling-only"
+            img1={BeforeImage5}
+              img2={AfterImage6}
+              alt1="First Image"
+              alt2="Second Image"
+              description="This is a comparison between the two images."
+              />
+      </section>
 
       <section className="section__newsletter">
         <p className="title">contact</p>
@@ -221,13 +228,15 @@ const HomePage = ({ setModalHidden }) => {
         </form>
       </section>
 
-       <SideBySideImages 
+      <section id="cover-changing">
+       <SideBySideImages  id="cover-changing"
                 img1={BeforeImage7}
                   img2={AfterImage8}
                   alt1="First Image"
                   alt2="Second Image"
                   description="This is a comparison between the two images."
                   />
+      </section>
 
       <section className="section__newsletter">
         <p className="title">contact</p>
@@ -241,14 +250,16 @@ const HomePage = ({ setModalHidden }) => {
           />
         </form>
       </section>
-        
-       <SideBySideImages 
+
+      <section id="sofa-servicing">
+       <SideBySideImages id="sofa-servicing"
                 img1={BeforeImage9}
                   img2={AfterImage10}
                   alt1="First Image"
                   alt2="Second Image"
                   description="This is a comparison between the two images."
                   />
+      </section>
 
         <section className="section__newsletter">
           <p className="title">contact</p>
