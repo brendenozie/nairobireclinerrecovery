@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    },
+    {
+      "src": "server/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server/server.js"
+    },
+    {
+      "src": "^/static/(.*)",
+      "dest": "/client/static/$1"
+    },
+    {
+       "src": "/(.*)\\.png",
+       "dest": "/client/$1.png"
+     }, 
+     {
+      "src": "/blog",
+      "dest": "/client/"
+    }, 
+    {
+     "src": "/contact",
+     "dest": "/client/"
+    }, 
+    {
+      "src": "/about",
+      "dest": "/client/"
+    }, 
+    {
+      "src": "/UploadGr",
+      "dest": "/client/"
+    },
+    {
+       "src": "/(.*)",
+       "dest": "/client/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/client/index.html"
+    }
+  ]
+}
