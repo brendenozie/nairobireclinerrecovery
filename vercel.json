@@ -27,6 +27,10 @@
        "dest": "/client/$1.png"
      }, 
      {
+      "src": "/updateimages",
+      "dest": "/client/"
+    }, 
+     {
       "src": "/blog",
       "dest": "/client/"
     }, 
