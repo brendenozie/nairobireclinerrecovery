@@ -187,29 +187,56 @@ const UpdateImages = () => {
   };
 
   // Handle file selection with validation
-  const handleFileChange = (e, fileName) => {
-    const file = e.target.files[0];
-    if (file && file.size > 5 * 1024 * 1024) {
-      alert("File size must be less than 5MB.");
-      return;
-    }
-    if (file && !["image/jpeg", "image/png"].includes(file.type)) {
-      alert("Only JPEG or PNG images are allowed.");
-      return;
-    }
-    setUpdatedImages((prev) => ({
-      ...prev,
-      [fileName]: file,
-    }));
-  };
+  // const handleFileChange = (e, fileName) => {
+  //   const file = e.target.files[0];
+  //   if (file && file.size > 5 * 1024 * 1024) {
+  //     alert("File size must be less than 5MB.");
+  //     return;
+  //   }
+  //   if (file && !["image/jpeg", "image/png"].includes(file.type)) {
+  //     alert("Only JPEG or PNG images are allowed.");
+  //     return;
+  //   }
+  //   setUpdatedImages((prev) => ({
+  //     ...prev,
+  //     [fileName]: file,
+  //   }));
+  // };
 
   // Store dimensions of the original image
-  const handleImageLoad = (fileName, width, height) => {
-    setOriginalDimensions((prev) => ({
-      ...prev,
-      [fileName]: { width, height },
-    }));
-  };
+const handleImageLoad = (fileName, width, height) => {
+  setOriginalDimensions((prev) => ({
+    ...prev,
+    [fileName]: { width, height },
+  }));
+};
+
+// Handle file selection with validation and apply dimensions
+const handleFileChange = (e, fileName) => {
+  const file = e.target.files[0];
+  if (file && file.size > 5 * 1024 * 1024) {
+    alert("File size must be less than 5MB.");
+    return;
+  }
+  if (file && !["image/jpeg", "image/png"].includes(file.type)) {
+    alert("Only JPEG or PNG images are allowed.");
+    return;
+  }
+
+  // Set the selected image and store original dimensions
+  setUpdatedImages((prev) => ({
+    ...prev,
+    [fileName]: file,
+  }));
+};
+
+  // Store dimensions of the original image
+  // const handleImageLoad = (fileName, width, height) => {
+  //   setOriginalDimensions((prev) => ({
+  //     ...prev,
+  //     [fileName]: { width, height },
+  //   }));
+  // };
 
   // Handle upload
   const handleUpload = async () => {
@@ -275,7 +302,42 @@ const UpdateImages = () => {
 
       {/* Images for Selected Section */}
       <div className="image-grid">
+
+      {/* Inside the render logic */}
         {imageSections[selectedSection].map(({ name, fileName, path }) => (
+          <div key={fileName} className="image-wrapper">
+            <h3>{name}</h3>
+            <img
+              src={path}
+              alt={name}
+              className="image-preview"
+              onLoad={(e) =>
+                handleImageLoad(fileName, e.target.naturalWidth, e.target.naturalHeight)
+              }
+            />
+            <input
+              type="file"
+              onChange={(e) => handleFileChange(e, fileName)}
+              accept="image/*"
+            />
+            {updatedImages[fileName] && (
+              <div className="preview-wrapper">
+                <h4>Selected Replacement:</h4>
+                <img
+                  src={URL.createObjectURL(updatedImages[fileName])}
+                  alt={`New ${name}`}
+                  className="image-preview"
+                  style={{
+                    width: originalDimensions[fileName]?.width || "auto",
+                    height: originalDimensions[fileName]?.height || "auto",
+                  }}
+                />
+              </div>
+            )}
+          </div>
+        ))}
+
+        {/* {imageSections[selectedSection].map(({ name, fileName, path }) => (
           <div key={fileName} className="image-wrapper">
             <h3>{name}</h3>
             <img
@@ -310,7 +372,7 @@ const UpdateImages = () => {
               </div>
             )}
           </div>
-        ))}
+        ))} */}
       </div>
 
       <button
