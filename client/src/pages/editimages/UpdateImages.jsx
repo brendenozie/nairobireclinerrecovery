@@ -227,7 +227,7 @@ const UpdateImages = () => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:3007/api/upload-images",
+        "https://nairobireclinerrecovery.vercel.app/api/upload-images",
         formData,
         {
           headers: {
