@@ -80,7 +80,7 @@ const App = ({ setCurrentUser, collectionsArray, currentUser, productModalHidden
         <Route exact path="/checkout" element={<Checkout />} />
         
         {/* {!productModalHidden && (
-          <Route path={["/category", "/collections"]} element={<ProductModal />} />
+          <Route path={["/category", "/collections  "]} element={<ProductModal />} />
         )} */}
       </Routes>
       
