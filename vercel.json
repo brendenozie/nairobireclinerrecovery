@@ -43,10 +43,6 @@
       "dest": "/client/"
     }, 
     {
-      "src": "/UploadGr",
-      "dest": "/client/"
-    },
-    {
        "src": "/(.*)",
        "dest": "/client/$1"
     },

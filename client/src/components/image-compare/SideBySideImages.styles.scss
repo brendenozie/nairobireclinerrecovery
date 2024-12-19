@@ -1,4 +1,5 @@
-
+@import "../../scss/variables.styles.scss";
+@import "../../scss/mixins.scss";
 
 .side-by-side-images {
   display: flex;
@@ -15,10 +16,15 @@
     flex: 2;
 
     img {
-      width: 100%;
-      height: auto;
+      width: 35vw;
+      height: 20vw;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+      @include respond(phone) {
+          width: 100%;
+          height: 75vw;
+        }
     }
   }
 

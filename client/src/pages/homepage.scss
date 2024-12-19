@@ -75,11 +75,12 @@
 
     .img {
       &-1 {
-        width: auto;
+        width: 35vw;
         height: 40vw;
 
         @include respond(phone) {
           height: 80vw;
+          width: 55vw;
         }
       }
 
@@ -209,12 +210,13 @@
 
       .img {
         &-1 {
-          width: auto;
+          width: 35vw;
           height: 40vw;
           position: relative;
 
           @include respond(phone) {
             height: 80vw;
+            width: 55vw;
           }
         }
 
