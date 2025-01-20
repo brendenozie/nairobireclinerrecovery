@@ -348,51 +348,6 @@ const getAdjustedDimensions = (fileName) => {
   }
 };
 
-  // const handleUpload = async () => {
-  //   if (Object.keys(updatedImages).length === 0) {
-  //     alert("Please select at least one image to replace.");
-  //     return;
-  //   }
-
-  //   setLoading(true); // Show loader
-  //   const formData = new FormData();
-  //   Object.entries(updatedImages).forEach(([fileName, file]) => {
-  //     // formData.append(fileName, file, fileName);
-  //     formData.append("files", file, fileName);
-  //   });
-
-  //   try {
-  //     const response = await axios.post(
-  //       "https://nairobireclinerrecovery.vercel.app/api/upload-images",
-  //       formData,
-  //       {
-  //         headers: {
-  //           "Content-Type": "multipart/form-data",
-  //         },
-  //       }
-  //     );
-
-  //     const updatedPaths = response.data.results; // Assuming backend returns updated image URLs
-  //     Object.entries(updatedPaths).forEach(([fileName, newPath]) => {
-  //       imageSections[selectedSection].forEach((image) => {
-  //         if (image.fileName === fileName) {
-  //           image.path = newPath; // Update path dynamically
-  //         }
-  //       });
-  //     });
-
-  //     alert(response.data.message || "Images updated successfully!");
-  //     setUpdatedImages({});
-  //   } catch (error) {
-  //     console.error("Error uploading images:", error);
-  //     alert(
-  //       error.response?.data?.message || "Failed to upload images. Please try again."
-  //     );
-  //   } finally {
-  //     setLoading(false); // Hide loader
-  //   }
-  // };
-
   return (
     <div className="update-images-container">
       <h2>Update Images</h2>
