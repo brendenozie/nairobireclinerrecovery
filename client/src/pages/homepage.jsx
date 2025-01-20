@@ -17,168 +17,168 @@ const imageSections = {
     {
       name: "Banner 1",
       fileName: "kaqk8ftwuynfnpgpy7ae.jpg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/kaqk8ftwuynfnpgpy7ae.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/kaqk8ftwuynfnpgpy7ae.jpg`,
     },
     {
       name: "Banner 2",
       fileName: "gg53pmnpe8j8ctmrtc9f.jpg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/gg53pmnpe8j8ctmrtc9f.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/gg53pmnpe8j8ctmrtc9f.jpg`,
     },
   ],
   whoweare: [
     {
       name: "Who We 1",
       fileName: "fkwzlingxdhhwncvs18k.jpg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/fkwzlingxdhhwncvs18k.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/fkwzlingxdhhwncvs18k.jpg`,
     },
     {
       name: "Who We 2",
       fileName: "eba3a3kc8tdbikph5erp.jpg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/eba3a3kc8tdbikph5erp.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/eba3a3kc8tdbikph5erp.jpg`,
     },
   ],
   watchus: [
     {
       name: "Watch us 1",
       fileName: "watchus1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/watchus1_l5ei4d.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/watchus1_l5ei4d.jpg`,
     },
     {
       name: "Watch us 2",
       fileName: "watchus2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/watchus2_wkasyw.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/watchus2_wkasyw.jpg`,
     },
   ],
   washingrefilling: [
     {
       name: "Washing Refilling 1",
       fileName: "washingrefilling1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/WashingRefilling1_sywwgj.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/WashingRefilling1_sywwgj.jpg`,
     },
     {
       name: "Washing Refilling 2",
       fileName: "washingrefilling2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/WashingRefilling2_cx43mc.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/WashingRefilling2_cx43mc.jpg`,
     },
   ],
   Effortlessly: [
     {
       name: "Effortlessly 1",
       fileName: "Effortlessly1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/Effortlessly1_putnfk.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/Effortlessly1_putnfk.jpg`,
     },
     {
       name: "Effortlessly 2",
       fileName: "Effortlessly2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/Effortlessly2_ptnh6x.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/Effortlessly2_ptnh6x.jpg`,
     },
   ],
   sidebyside: [
     {
       name: "Side 1",
       fileName: "sidebyside1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/sidebyside1_ikkezl.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/sidebyside1_ikkezl.jpg`,
     },
     {
       name: "Side 2",
       fileName: "sidebyside2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/sidebyside2_bhcmrk.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/sidebyside2_bhcmrk.jpg`,
     },
   ],
   refurbishing: [
     {
       name: "Refurbishing 1",
       fileName: "refurbishing1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/Refurbishing1_memhgo.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/Refurbishing1_memhgo.jpg`,
     },
     {
       name: "Refurbishing 2",
       fileName: "refurbishing2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/Refurbishing2_cwqwcf.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/Refurbishing2_cwqwcf.jpg`,
     },
   ],
   refillingonly: [
     {
       name: "Refilling Only 1",
       fileName: "RefillingOnly1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/RefillingOnly1_ejs1l4.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/RefillingOnly1_ejs1l4.jpg`,
     },
     {
       name: "Refilling Only 2",
       fileName: "RefillingOnly2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/RefillingOnly2_w0rviw.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/RefillingOnly2_w0rviw.jpg`,
     },
   ],
   coverchangingrefilling: [
     {
       name: "Cover Changing 1",
       fileName: "CoverChanging1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/CoverChanging1_v22j1u.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/CoverChanging1_v22j1u.jpg`,
     },
     {
       name: "Cover Changing 2",
       fileName: "CoverChanging2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/CoverChanging2_imhidk.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/CoverChanging2_imhidk.jpg`,
     },
   ],  
   sidebyside2: [
     {
       name: "Side 3",
       fileName: "sidebyside21.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/sidebyside21_xldu3o.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/sidebyside21_xldu3o.jpg`,
     },
     {
       name: "Side 4",
       fileName: "sidebyside22.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/sidebyside22_kyxmcj.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/sidebyside22_kyxmcj.jpg`,
     },
   ],
   sofaservicing: [
     {
       name: "Sofa Servicing 1",
       fileName: "SofaServicing1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing1_ep2uqw.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/SofaServicing1_ep2uqw.jpg`,
     },
     {
       name: "Sofa Servicing 2",
       fileName: "SofaServicing2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing2_ebaesy.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/SofaServicing2_ebaesy.jpg`,
     },
   ],
   sofaservicing3: [
     {
       name: "Sofa Servicing3 1",
       fileName: "SofaServicing31.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing31_jhw9mn.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/SofaServicing31_jhw9mn.jpg`,
     },
     {
       name: "Sofa Servicing3 2",
       fileName: "SofaServicing32.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing32_im86fl.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/SofaServicing32_im86fl.jpg`,
     },
   ],
   sofaservicing4: [
     {
       name: "Sofa Servicing4 1",
       fileName: "SofaServicing41.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing41_y6gre6.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/SofaServicing41_y6gre6.jpg`,
     },
     {
       name: "Sofa Servicing4 2",
       fileName: "SofaServicing42.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing42_dajsha.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/SofaServicing42_dajsha.jpg`,
     },
   ],
   sofaservicing5: [
     {
       name: "Sofa Servicing5 1",
       fileName: "SofaServicing51.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing51_yjej4u.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/SofaServicing51_yjej4u.jpg`,
     },
     {
       name: "Sofa Servicing5 2",
       fileName: "SofaServicing52.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing52_w6l803.jpg",
+      path: `https://res.cloudinary.com/autoduka/image/upload/v${Date.now()}/SofaServicing52_w6l803.jpg`,
     },
   ],
 };
