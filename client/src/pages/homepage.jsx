@@ -211,7 +211,7 @@ const HomePage = ({ setModalHidden }) => {
 
           <div className="about__content--img img">
             <img
-              src={`${imageSections.whoweare[1].path}?t=${Date.now()}`}
+              src={`${imageSections.whoweare[1].path.replace("/upload/", "/upload/v_auto/")}`}
               alt="About Us"
               className="img-1"
               loading="lazy"  // Lazy load this image
@@ -219,7 +219,7 @@ const HomePage = ({ setModalHidden }) => {
 
             <div className="img-2__banner">
               <img
-                src={`${imageSections.whoweare[0].path}?t=${Date.now()}`}
+                src={`${imageSections.whoweare[0].path.replace("/upload/", "/upload/v_auto/")}`}
                 alt="About Us Banner"
                 className="img-2"
                 loading="lazy"  // Lazy load this image
@@ -234,7 +234,7 @@ const HomePage = ({ setModalHidden }) => {
         <h2 className="title__sub">
           <span>Watch</span> us transform them for you
         </h2>
-        <LazyVideo poster={`${imageSections.watchus[0].path}?t=${Date.now()}`} alt="Exercise Video" />
+        <LazyVideo poster={`${imageSections.watchus[0].path.replace("/upload/", "/upload/v_auto/")}`} alt="Exercise Video" />
       </section>
       
       <ReclinerServices />
@@ -258,8 +258,8 @@ const HomePage = ({ setModalHidden }) => {
       <section id="washing-and-refilling">
         <SideBySideImages
           id="washing-and-refilling"
-          img1={`${imageSections.washingrefilling[0].path}?t=${Date.now()}`}
-          img2={`${imageSections.washingrefilling[1].path}?t=${Date.now()}`}
+          img1={`${imageSections.washingrefilling[0].path.replace("/upload/", "/upload/v_auto/")}`}
+          img2={`${imageSections.washingrefilling[1].path.replace("/upload/", "/upload/v_auto/")}`}
           alt1="Before Image"
           alt2="After Image"
           description="This is a comparison between the two images."
@@ -272,7 +272,7 @@ const HomePage = ({ setModalHidden }) => {
         <div className="ethos__content">
           <div className="ethos__content--img img">
             <img
-              src={`${imageSections.Effortlessly[0].path}?t=${Date.now()}`}
+              src={`${imageSections.Effortlessly[0].path.replace("/upload/", "/upload/v_auto/")}`}
               alt="Our Ethos"
               className="img-1"
               loading="lazy"
@@ -280,7 +280,7 @@ const HomePage = ({ setModalHidden }) => {
 
             <div className="img-2__banner">
               <img
-                src={`${imageSections.Effortlessly[1].path}?t=${Date.now()}`}
+                src={`${imageSections.Effortlessly[1].path.replace("/upload/", "/upload/v_auto/")}`}
                 alt="Ethos Banner"
                 className="img-2"
                 loading="lazy"
@@ -301,8 +301,8 @@ const HomePage = ({ setModalHidden }) => {
       </section>
 
       <BeforeAfterSlider
-        beforeImage={`${imageSections.sidebyside[0].path}?t=${Date.now()}`}
-        afterImage={`${imageSections.sidebyside[1].path}?t=${Date.now()}`}
+        beforeImage={`${imageSections.sidebyside[0].path.replace("/upload/", "/upload/v_auto/")}`}
+        afterImage={`${imageSections.sidebyside[1].path.replace("/upload/", "/upload/v_auto/")}`}
         beforeAlt="Before Transformation"
         afterAlt="After Transformation"
       />
@@ -322,8 +322,8 @@ const HomePage = ({ setModalHidden }) => {
 
       <section id="refurbishing">
         <SideBySideImages id="refurbishing"
-            img1={`${imageSections.refurbishing[0].path}?t=${Date.now()}`}
-              img2={`${imageSections.refurbishing[1].path}?t=${Date.now()}`}
+            img1={`${imageSections.refurbishing[0].path.replace("/upload/", "/upload/v_auto/")}`}
+              img2={`${imageSections.refurbishing[1].path.replace("/upload/", "/upload/v_auto/")}`}
               alt1="First Image"
               alt2="Second Image"
               description="This is a comparison between the two images."
@@ -345,8 +345,8 @@ const HomePage = ({ setModalHidden }) => {
       
       <section id="refilling-only">
         <SideBySideImages  id="refilling-only"
-            img1={`${imageSections.refillingonly[0].path}?t=${Date.now()}`}
-              img2={`${imageSections.refillingonly[1].path}?t=${Date.now()}`}
+            img1={`${imageSections.refillingonly[0].path.replace("/upload/", "/upload/v_auto/")}`}
+              img2={`${imageSections.refillingonly[1].path.replace("/upload/", "/upload/v_auto/")}`}
               alt1="First Image"
               alt2="Second Image"
               description="This is a comparison between the two images."
@@ -368,8 +368,8 @@ const HomePage = ({ setModalHidden }) => {
       
       
         <BeforeAfterSlider 
-          beforeImage={`${imageSections.sidebyside2[0].path}?t=${Date.now()}`}
-          afterImage={`${imageSections.sidebyside2[1].path}?t=${Date.now()}`}
+          beforeImage={`${imageSections.sidebyside2[0].path.replace("/upload/", "/upload/v_auto/")}`}
+          afterImage={`${imageSections.sidebyside2[1].path.replace("/upload/", "/upload/v_auto/")}`}
           beforeAlt="Before Transformation"
           afterAlt="After Transformation"
         />
@@ -389,8 +389,8 @@ const HomePage = ({ setModalHidden }) => {
 
       <section id="cover-changing">
        <SideBySideImages  id="cover-changing"
-                img1={`${imageSections.coverchangingrefilling[0].path}?t=${Date.now()}`}
-                  img2={`${imageSections.coverchangingrefilling[1].path}?t=${Date.now()}`}
+                img1={`${imageSections.coverchangingrefilling[0].path.replace("/upload/", "/upload/v_auto/")}`}
+                  img2={`${imageSections.coverchangingrefilling[1].path.replace("/upload/", "/upload/v_auto/")}`}
                   alt1="First Image"
                   alt2="Second Image"
                   description="This is a comparison between the two images."
@@ -412,8 +412,8 @@ const HomePage = ({ setModalHidden }) => {
 
       <section id="sofa-servicing">
        <SideBySideImages id="sofa-servicing"
-                img1={`${imageSections.sofaservicing[0].path}?t=${Date.now()}`}
-                  img2={`${imageSections.sofaservicing[1].path}?t=${Date.now()}`}
+                img1={`${imageSections.sofaservicing[0].path.replace("/upload/", "/upload/v_auto/")}`}
+                  img2={`${imageSections.sofaservicing[1].path.replace("/upload/", "/upload/v_auto/")}`}
                   alt1="First Image"
                   alt2="Second Image"
                   description="This is a comparison between the two images."
@@ -434,8 +434,8 @@ const HomePage = ({ setModalHidden }) => {
         </section>
         
        <SideBySideImages 
-                img1={`${imageSections.sofaservicing[0].path}?t=${Date.now()}`}
-                  img2={`${imageSections.sofaservicing[1].path}?t=${Date.now()}`}
+                img1={`${imageSections.sofaservicing[0].path.replace("/upload/", "/upload/v_auto/")}`}
+                  img2={`${imageSections.sofaservicing[1].path.replace("/upload/", "/upload/v_auto/")}`}
                   alt1="First Image"
                   alt2="Second Image"
                   description="This is a comparison between the two images."
@@ -456,8 +456,8 @@ const HomePage = ({ setModalHidden }) => {
 
         
        <SideBySideImages 
-                img1={`${imageSections.sofaservicing4[0].path}?t=${Date.now()}`}
-                  img2={`${imageSections.sofaservicing4[1].path}?t=${Date.now()}`}
+                img1={`${imageSections.sofaservicing4[0].path.replace("/upload/", "/upload/v_auto/")}`}
+                  img2={`${imageSections.sofaservicing4[1].path.replace("/upload/", "/upload/v_auto/")}`}
                   alt1="First Image"
                   alt2="Second Image"
                   description="This is a comparison between the two images."
@@ -477,8 +477,8 @@ const HomePage = ({ setModalHidden }) => {
       </section>
 
          <SideBySideImages 
-                img1={`${imageSections.sofaservicing5[0].path}?t=${Date.now()}`}
-                  img2={`${imageSections.sofaservicing5[1].path}?t=${Date.now()}`}
+                img1={`${imageSections.sofaservicing5[0].path.replace("/upload/", "/upload/v_auto/")}`}
+                  img2={`${imageSections.sofaservicing5[1].path.replace("/upload/", "/upload/v_auto/")}`}
                   alt1="First Image"
                   alt2="Second Image"
                   description="This is a comparison between the two images."
