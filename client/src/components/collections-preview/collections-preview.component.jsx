@@ -27,7 +27,7 @@ const CollectionPreview = (props) => {
           <div className="preview__left img">
             <img
               alt=""
-              src={imgChair.second}
+              src={`${imgChair.second}?t=${Date.now()}`}
               className="img__small"
               style={{ left: "50%", top: "12%", opacity: "1" }}
               id="1"
@@ -35,7 +35,7 @@ const CollectionPreview = (props) => {
             />
             <img
               alt=""
-              src={imgSofa.first}
+              src={`${imgSofa.first}?t=${Date.now()}`}
               className="img__large"
               style={{ left: "45%", bottom: "10%", opacity: "0" }}
               id="3"
@@ -43,7 +43,7 @@ const CollectionPreview = (props) => {
             />
             <img
               alt=""
-              src={imgSofa.second}
+              src={`${imgSofa.second}?t=${Date.now()}`}
               className="img__large"
               style={{ right: "45%", top: "-10%", opacity: "0" }}
               id="3"
@@ -51,7 +51,7 @@ const CollectionPreview = (props) => {
             />
             <img
               alt=""
-              src={imgChair.third}
+              src={`${imgChair.third}?t=${Date.now()}`}
               className="img__small"
               style={{ bottom: "20%", left: "20%", opacity: "1" }}
               id="1"
@@ -59,7 +59,7 @@ const CollectionPreview = (props) => {
             />
             <img
               alt=""
-              src={imgOtto.third}
+              src={`${imgOtto.third}?t=${Date.now()}`}
               className="img__small"
               style={{ bottom: "20%", left: "20%", opacity: "0" }}
               id="5"
@@ -67,7 +67,7 @@ const CollectionPreview = (props) => {
             />
             <img
               alt=""
-              src={imgOtto.second}
+              src={`${imgOtto.second}?t=${Date.now()}`}
               className="img__small"
               style={{ left: "50%", top: "12%", opacity: "0" }}
               id="5"
@@ -95,7 +95,7 @@ const CollectionPreview = (props) => {
           <div className="preview__right img">
             <img
               alt=""
-              src={imgChair.first}
+              src={`${imgChair.first}?t=${Date.now()}`}
               className="img__large"
               style={{
                 top: "5%",
@@ -108,7 +108,7 @@ const CollectionPreview = (props) => {
             />{" "}
             <img
               alt=""
-              src={imgSofa.third}
+              src={`${imgChair.third}?t=${Date.now()}`}
               className="img__large"
               style={{ right: "35%", top: "10%", opacity: "0" }}
               id="3"
@@ -116,7 +116,7 @@ const CollectionPreview = (props) => {
             />
             <img
               alt=""
-              src={imgOtto.first}
+              src={`${imgChair.first}?t=${Date.now()}`}
               className="img__large"
               style={{
                 top: "5%",

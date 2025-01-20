@@ -417,7 +417,7 @@ const getAdjustedDimensions = (fileName) => {
         <div key={fileName} className="image-wrapper">
           <h3>{name}</h3>
           <img
-            src={path}
+            src={`${path}?t=${Date.now()}`}
             alt={name}
             className="image-preview"
             onLoad={(e) =>

@@ -65,9 +65,9 @@ const CitiesSlider = ({ slides = [] }) => {
                 Discover Our Collections
               </Link> */}
               <WhatsAppCTA  className="slider__slide-readmore"
-          phoneNumber="+254799571567"
-          message="Hello, I would like to inquire about your services."
-        />
+                phoneNumber="+254799571567"
+                message="Hello, I would like to inquire about your services."
+              />
             </div>
             <div className="slider__slide-parts">
               {Array.from({ length: IMAGE_PARTS }).map((_, i) => (

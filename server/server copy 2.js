@@ -36,29 +36,14 @@ const storage = new CloudinaryStorage({
   },
 });
 
-const upload = multer({
-  storage,
-  fileFilter: (req, file, cb) => {
-    const fileTypes = /jpeg|jpg|png|gif/;
-    const extName = fileTypes.test(path.extname(file.originalname).toLowerCase());
-    const mimeType = fileTypes.test(file.mimetype);
-    if (extName && mimeType) {
-      cb(null, true);
-    } else {
-      cb(new Error("Only image files are allowed!"));
-    }
-  },
-});
+const upload = multer({ storage });
 
+// Upload images endpoint
 app.post("/api/upload-images", upload.array("files"), async (req, res) => {
   try {
-    if (!req.files || req.files.length === 0) {
-      return res.status(400).json({ message: "No files uploaded." });
-    }
-
     const uploadedFiles = req.files.map((file) => ({
       fileName: file.originalname,
-      url: file.path,
+      path: file.path, // Cloudinary URL for the uploaded file
     }));
 
     res.status(200).json({
@@ -70,7 +55,6 @@ app.post("/api/upload-images", upload.array("files"), async (req, res) => {
     res.status(500).json({ message: "Image upload failed", error });
   }
 });
-
 
 // Start server
 app.listen(3007, () => {
