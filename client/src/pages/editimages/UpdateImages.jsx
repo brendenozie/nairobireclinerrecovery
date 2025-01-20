@@ -173,186 +173,143 @@ const imageSections = {
   ],
 };
 
-
 const UpdateImages = () => {
-  const [selectedSection, setSelectedSection] = useState("washingrefilling"); // Default to 'washingrefilling'
+  const [selectedSection, setSelectedSection] = useState("washingrefilling"); // Default section
   const [updatedImages, setUpdatedImages] = useState({});
   const [originalDimensions, setOriginalDimensions] = useState({});
-  const [loading, setLoading] = useState(false); // Track loading state
+  const [loading, setLoading] = useState(false);
+  const [uploadStatus, setUploadStatus] = useState({}); // Individual upload status
 
-  // Handle section change
   const handleSectionChange = (e) => {
     setSelectedSection(e.target.value);
     setUpdatedImages({});
   };
 
-  // Handle file selection with validation
-  // const handleFileChange = (e, fileName) => {
-  //   const file = e.target.files[0];
-  //   if (file && file.size > 5 * 1024 * 1024) {
-  //     alert("File size must be less than 5MB.");
-  //     return;
-  //   }
-  //   if (file && !["image/jpeg", "image/png"].includes(file.type)) {
-  //     alert("Only JPEG or PNG images are allowed.");
-  //     return;
-  //   }
-  //   setUpdatedImages((prev) => ({
-  //     ...prev,
-  //     [fileName]: file,
-  //   }));
-  // };
-
-  // Store dimensions of the original image
-const handleImageLoad = (fileName, width, height) => {
-  setOriginalDimensions((prev) => ({
-    ...prev,
-    [fileName]: { width, height },
-  }));
-};
-
-// Function to resize image to match the original dimensions
-const resizeImage = (file, width, height) => {
-  return new Promise((resolve, reject) => {
-    const img = new Image();
-    const reader = new FileReader();
-    
-    reader.onload = () => {
-      img.src = reader.result;
-    };
-    
-    img.onload = () => {
-      const canvas = document.createElement("canvas");
-      const ctx = canvas.getContext("2d");
-      
-      // Resize the canvas to the desired dimensions
-      canvas.width = width;
-      canvas.height = height;
-      
-      // Draw the resized image on the canvas
-      ctx.drawImage(img, 0, 0, width, height);
-      
-      // Get the resized image as a Blob
-      canvas.toBlob((blob) => {
-        resolve(blob);
-      }, file.type);
-    };
-    
-    reader.onerror = (error) => reject(error);
-    reader.readAsDataURL(file); // Convert image file to base64 for canvas
-  });
-};
-
-
-// Handle file selection with validation and apply dimensions
-// const handleFileChange = (e, fileName) => {
-//   const file = e.target.files[0];
-//   if (file && file.size > 5 * 1024 * 1024) {
-//     alert("File size must be less than 5MB.");
-//     return;
-//   }
-//   if (file && !["image/jpeg", "image/png"].includes(file.type)) {
-//     alert("Only JPEG or PNG images are allowed.");
-//     return;
-//   }
-
-//   // Set the selected image and store original dimensions
-//   setUpdatedImages((prev) => ({
-//     ...prev,
-//     [fileName]: file,
-//   }));
-// };
-const handleFileChange = async (e, fileName) => {
-  const file = e.target.files[0];
-  
-  if (file && file.size > 5 * 1024 * 1024) {
-    alert("File size must be less than 5MB.");
-    return;
-  }
-  
-  if (file && !["image/jpeg", "image/png"].includes(file.type)) {
-    alert("Only JPEG or PNG images are allowed.");
-    return;
-  }
-
-  // Get the original dimensions of the selected image
-  const original = originalDimensions[fileName];
-  if (original) {
-    // Resize the selected image to match the original dimensions
-    const resizedImage = await resizeImage(file, original.width, original.height);
-    setUpdatedImages((prev) => ({
+  const handleImageLoad = (fileName, width, height) => {
+    setOriginalDimensions((prev) => ({
       ...prev,
-      [fileName]: resizedImage, // Save resized image for upload
+      [fileName]: { width, height },
     }));
-  }
-};
+  };
 
+  const resizeImage = (file, width, height) => {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      const reader = new FileReader();
 
-// Adjust the uploaded image to match the dimensions of the current image
-const getAdjustedDimensions = (fileName) => {
-  const original = originalDimensions[fileName];
-  return original ? { width: original.width, height: original.height } : {};
-};
+      reader.onload = () => {
+        img.src = reader.result;
+      };
 
-  // Store dimensions of the original image
-  // const handleImageLoad = (fileName, width, height) => {
-  //   setOriginalDimensions((prev) => ({
-  //     ...prev,
-  //     [fileName]: { width, height },
-  //   }));
-  // };
+      img.onload = () => {
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
 
-  // Handle upload
-  const handleUpload = async () => {
-  if (Object.keys(updatedImages).length === 0) {
-    alert("Please select at least one image to replace.");
-    return;
-  }
+        canvas.width = width;
+        canvas.height = height;
 
-  setLoading(true); // Show loader
-  const formData = new FormData();
-  
-  Object.entries(updatedImages).forEach(([fileName, file]) => {
-    formData.append("files", file, fileName);
-  });
+        ctx.drawImage(img, 0, 0, width, height);
 
-  try {
-    const response = await axios.post(
-      "https://nairobireclinerrecovery.vercel.app/api/upload-images",
-      formData,
-      {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
+        canvas.toBlob(
+          (blob) => {
+            resolve(blob);
+          },
+          file.type
+        );
+      };
+
+      img.onerror = () => reject(new Error("Failed to load image for resizing."));
+      reader.onerror = (error) => reject(error);
+
+      reader.readAsDataURL(file);
+    });
+  };
+
+  const handleFileChange = async (e, fileName) => {
+    const file = e.target.files[0];
+
+    if (!file) return;
+
+    if (file.size > 5 * 1024 * 1024) {
+      alert("File size must be less than 5MB.");
+      return;
+    }
+
+    if (!["image/jpeg", "image/png"].includes(file.type)) {
+      alert("Only JPEG or PNG images are allowed.");
+      return;
+    }
+
+    const original = originalDimensions[fileName];
+    if (original) {
+      try {
+        const resizedImage = await resizeImage(file, original.width, original.height);
+        setUpdatedImages((prev) => ({
+          ...prev,
+          [fileName]: resizedImage,
+        }));
+      } catch (error) {
+        console.error("Error resizing image:", error);
+        alert("Failed to resize image. Please try again.");
       }
-    );
+    }
+  };
 
-    const updatedPaths = response.data.results; // Assuming backend returns updated image URLs
-    Object.entries(updatedPaths).forEach(([fileName, newPath]) => {
-      imageSections[selectedSection].forEach((image) => {
-        if (image.fileName === fileName) {
-          image.path = newPath; // Update path dynamically
-        }
-      });
+  const handleUpload = async () => {
+    if (Object.keys(updatedImages).length === 0) {
+      alert("Please select at least one image to replace.");
+      return;
+    }
+
+    setLoading(true);
+    const formData = new FormData();
+
+    Object.entries(updatedImages).forEach(([fileName, file]) => {
+      formData.append("files", file, fileName);
     });
 
-    alert(response.data.message || "Images updated successfully!");
-    setUpdatedImages({});
-  } catch (error) {
-    console.error("Error uploading images:", error);
-    alert(
-      error.response?.data?.message || "Failed to upload images. Please try again."
-    );
-  } finally {
-    setLoading(false); // Hide loader
-  }
-};
+    try {
+      const response = await axios.post(
+        "https://nairobireclinerrecovery.vercel.app/api/upload-images",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+
+      const updatedPaths = response.data.results;
+      if (!updatedPaths) {
+        throw new Error("Unexpected response from the server.");
+      }
+
+      Object.entries(updatedPaths).forEach(([fileName, newPath]) => {
+        imageSections[selectedSection].forEach((image) => {
+          if (image.fileName === fileName) {
+            image.path = newPath;
+          }
+        });
+      });
+
+      alert(response.data.message || "Images updated successfully!");
+      setUpdatedImages({});
+    } catch (error) {
+      console.error("Error uploading images:", error);
+      alert(
+        error.response?.data?.message || "Failed to upload images. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const generateCacheBustedURL = (path) => `${path}?t=${Date.now()}`;
 
   return (
     <div className="update-images-container">
       <h2>Update Images</h2>
 
-      {/* Section Selector */}
       <label className="section-selector">
         <span>Select Section:</span>
         <select value={selectedSection} onChange={handleSectionChange}>
@@ -364,45 +321,12 @@ const getAdjustedDimensions = (fileName) => {
         </select>
       </label>
 
-      {/* Images for Selected Section */}
       <div className="image-grid">
-
-      {/* // Inside the render logic */}
-      {imageSections[selectedSection].map(({ name, fileName, path }) => (
-        <div key={fileName} className="image-wrapper">
-          <h3>{name}</h3>
-          <img
-            src={`${path}?t=${Date.now()}`}
-            alt={name}
-            className="image-preview"
-            onLoad={(e) =>
-              handleImageLoad(fileName, e.target.naturalWidth, e.target.naturalHeight)
-            }
-          />
-          <input
-            type="file"
-            onChange={(e) => handleFileChange(e, fileName)}
-            accept="image/*"
-          />
-          {updatedImages[fileName] && (
-            <div className="preview-wrapper">
-              <h4>Selected Replacement:</h4>
-              <img
-                src={URL.createObjectURL(updatedImages[fileName])}
-                alt={`New ${name}`}
-                className="image-preview"
-                style={getAdjustedDimensions(fileName)}  // Apply adjusted dimensions
-              />
-            </div>
-          )}
-        </div>
-      ))}
-      {/* Inside the render logic */}
-        {/* {imageSections[selectedSection].map(({ name, fileName, path }) => (
+        {imageSections[selectedSection].map(({ name, fileName, path }) => (
           <div key={fileName} className="image-wrapper">
             <h3>{name}</h3>
             <img
-              src={path}
+              src={generateCacheBustedURL(path)}
               alt={name}
               className="image-preview"
               onLoad={(e) =>
@@ -429,9 +353,7 @@ const getAdjustedDimensions = (fileName) => {
               </div>
             )}
           </div>
-        ))} */}
-
-       
+        ))}
       </div>
 
       <button
@@ -446,3 +368,4 @@ const getAdjustedDimensions = (fileName) => {
 };
 
 export default UpdateImages;
+
