@@ -17,168 +17,168 @@ const imageSections = {
     {
       name: "Banner 1",
       fileName: "kaqk8ftwuynfnpgpy7ae.jpg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/kaqk8ftwuynfnpgpy7ae.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/kaqk8ftwuynfnpgpy7ae.jpg",
     },
     {
       name: "Banner 2",
       fileName: "gg53pmnpe8j8ctmrtc9f.jpg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/gg53pmnpe8j8ctmrtc9f.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/gg53pmnpe8j8ctmrtc9f.jpg",
     },
   ],
   whoweare: [
     {
       name: "Who We 1",
       fileName: "fkwzlingxdhhwncvs18k.jpg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/fkwzlingxdhhwncvs18k.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/fkwzlingxdhhwncvs18k.jpg",
     },
     {
       name: "Who We 2",
       fileName: "eba3a3kc8tdbikph5erp.jpg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/eba3a3kc8tdbikph5erp.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/eba3a3kc8tdbikph5erp.jpg",
     },
   ],
   watchus: [
     {
       name: "Watch us 1",
       fileName: "watchus1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/watchus1_l5ei4d.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/watchus1_l5ei4d.jpg",
     },
     {
       name: "Watch us 2",
       fileName: "watchus2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/watchus2_wkasyw.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/watchus2_wkasyw.jpg",
     },
   ],
   washingrefilling: [
     {
       name: "Washing Refilling 1",
       fileName: "washingrefilling1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/WashingRefilling1_sywwgj.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/WashingRefilling1_sywwgj.jpg",
     },
     {
       name: "Washing Refilling 2",
       fileName: "washingrefilling2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/WashingRefilling2_cx43mc.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/WashingRefilling2_cx43mc.jpg",
     },
   ],
   Effortlessly: [
     {
       name: "Effortlessly 1",
       fileName: "Effortlessly1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/Effortlessly1_putnfk.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/Effortlessly1_putnfk.jpg",
     },
     {
       name: "Effortlessly 2",
       fileName: "Effortlessly2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/Effortlessly2_ptnh6x.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/Effortlessly2_ptnh6x.jpg",
     },
   ],
   sidebyside: [
     {
       name: "Side 1",
       fileName: "sidebyside1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/sidebyside1_ikkezl.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/sidebyside1_ikkezl.jpg",
     },
     {
       name: "Side 2",
       fileName: "sidebyside2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/sidebyside2_bhcmrk.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/sidebyside2_bhcmrk.jpg",
     },
   ],
   refurbishing: [
     {
       name: "Refurbishing 1",
       fileName: "refurbishing1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/Refurbishing1_memhgo.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/Refurbishing1_memhgo.jpg",
     },
     {
       name: "Refurbishing 2",
       fileName: "refurbishing2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/Refurbishing2_cwqwcf.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/Refurbishing2_cwqwcf.jpg",
     },
   ],
   refillingonly: [
     {
       name: "Refilling Only 1",
       fileName: "RefillingOnly1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/RefillingOnly1_ejs1l4.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/RefillingOnly1_ejs1l4.jpg",
     },
     {
       name: "Refilling Only 2",
       fileName: "RefillingOnly2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/RefillingOnly2_w0rviw.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/RefillingOnly2_w0rviw.jpg",
     },
   ],
   coverchangingrefilling: [
     {
       name: "Cover Changing 1",
       fileName: "CoverChanging1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/CoverChanging1_v22j1u.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/CoverChanging1_v22j1u.jpg",
     },
     {
       name: "Cover Changing 2",
       fileName: "CoverChanging2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/CoverChanging2_imhidk.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/CoverChanging2_imhidk.jpg",
     },
   ],  
   sidebyside2: [
     {
       name: "Side 3",
       fileName: "sidebyside21.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/sidebyside21_xldu3o.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/sidebyside21_xldu3o.jpg",
     },
     {
       name: "Side 4",
       fileName: "sidebyside22.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/sidebyside22_kyxmcj.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/sidebyside22_kyxmcj.jpg",
     },
   ],
   sofaservicing: [
     {
       name: "Sofa Servicing 1",
       fileName: "SofaServicing1.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/SofaServicing1_ep2uqw.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing1_ep2uqw.jpg",
     },
     {
       name: "Sofa Servicing 2",
       fileName: "SofaServicing2.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/SofaServicing2_ebaesy.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing2_ebaesy.jpg",
     },
   ],
   sofaservicing3: [
     {
       name: "Sofa Servicing3 1",
       fileName: "SofaServicing31.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/SofaServicing31_jhw9mn.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing31_jhw9mn.jpg",
     },
     {
       name: "Sofa Servicing3 2",
       fileName: "SofaServicing32.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/SofaServicing32_im86fl.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing32_im86fl.jpg",
     },
   ],
   sofaservicing4: [
     {
       name: "Sofa Servicing4 1",
       fileName: "SofaServicing41.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/SofaServicing41_y6gre6.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing41_y6gre6.jpg",
     },
     {
       name: "Sofa Servicing4 2",
       fileName: "SofaServicing42.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/SofaServicing42_dajsha.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing42_dajsha.jpg",
     },
   ],
   sofaservicing5: [
     {
       name: "Sofa Servicing5 1",
       fileName: "SofaServicing51.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/SofaServicing51_yjej4u.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing51_yjej4u.jpg",
     },
     {
       name: "Sofa Servicing5 2",
       fileName: "SofaServicing52.jpeg",
-      path: "https://res.cloudinary.com/autoduka/image/upload/v_auto/SofaServicing52_w6l803.jpg",
+      path: "https://res.cloudinary.com/autoduka/image/upload/SofaServicing52_w6l803.jpg",
     },
   ],
 };
@@ -211,7 +211,7 @@ const HomePage = ({ setModalHidden }) => {
 
           <div className="about__content--img img">
             <img
-              src={`${imageSections.whoweare[1].path}`}
+              src={`${imageSections.whoweare[1].path}?t=${Date.now()}`}
               alt="About Us"
               className="img-1"
               loading="lazy"  // Lazy load this image
@@ -219,7 +219,7 @@ const HomePage = ({ setModalHidden }) => {
 
             <div className="img-2__banner">
               <img
-                src={`${imageSections.whoweare[0].path}`}
+                src={`${imageSections.whoweare[0].path}?t=${Date.now()}`}
                 alt="About Us Banner"
                 className="img-2"
                 loading="lazy"  // Lazy load this image
@@ -234,7 +234,7 @@ const HomePage = ({ setModalHidden }) => {
         <h2 className="title__sub">
           <span>Watch</span> us transform them for you
         </h2>
-        <LazyVideo poster={`${imageSections.watchus[0].path}`} alt="Exercise Video" />
+        <LazyVideo poster={`${imageSections.watchus[0].path}?t=${Date.now()}`} alt="Exercise Video" />
       </section>
       
       <ReclinerServices />
@@ -258,8 +258,8 @@ const HomePage = ({ setModalHidden }) => {
       <section id="washing-and-refilling">
         <SideBySideImages
           id="washing-and-refilling"
-          img1={`${imageSections.washingrefilling[0].path}`}
-          img2={`${imageSections.washingrefilling[1].path}`}
+          img1={`${imageSections.washingrefilling[0].path}?t=${Date.now()}`}
+          img2={`${imageSections.washingrefilling[1].path}?t=${Date.now()}`}
           alt1="Before Image"
           alt2="After Image"
           description="This is a comparison between the two images."
@@ -272,7 +272,7 @@ const HomePage = ({ setModalHidden }) => {
         <div className="ethos__content">
           <div className="ethos__content--img img">
             <img
-              src={`${imageSections.Effortlessly[0].path}`}
+              src={`${imageSections.Effortlessly[0].path}?t=${Date.now()}`}
               alt="Our Ethos"
               className="img-1"
               loading="lazy"
@@ -280,7 +280,7 @@ const HomePage = ({ setModalHidden }) => {
 
             <div className="img-2__banner">
               <img
-                src={`${imageSections.Effortlessly[1].path}`}
+                src={`${imageSections.Effortlessly[1].path}?t=${Date.now()}`}
                 alt="Ethos Banner"
                 className="img-2"
                 loading="lazy"
@@ -301,8 +301,8 @@ const HomePage = ({ setModalHidden }) => {
       </section>
 
       <BeforeAfterSlider
-        beforeImage={`${imageSections.sidebyside[0].path}`}
-        afterImage={`${imageSections.sidebyside[1].path}`}
+        beforeImage={`${imageSections.sidebyside[0].path}?t=${Date.now()}`}
+        afterImage={`${imageSections.sidebyside[1].path}?t=${Date.now()}`}
         beforeAlt="Before Transformation"
         afterAlt="After Transformation"
       />
@@ -322,8 +322,8 @@ const HomePage = ({ setModalHidden }) => {
 
       <section id="refurbishing">
         <SideBySideImages id="refurbishing"
-            img1={`${imageSections.refurbishing[0].path}`}
-              img2={`${imageSections.refurbishing[1].path}`}
+            img1={`${imageSections.refurbishing[0].path}?t=${Date.now()}`}
+              img2={`${imageSections.refurbishing[1].path}?t=${Date.now()}`}
               alt1="First Image"
               alt2="Second Image"
               description="This is a comparison between the two images."
@@ -345,8 +345,8 @@ const HomePage = ({ setModalHidden }) => {
       
       <section id="refilling-only">
         <SideBySideImages  id="refilling-only"
-            img1={`${imageSections.refillingonly[0].path}`}
-              img2={`${imageSections.refillingonly[1].path}`}
+            img1={`${imageSections.refillingonly[0].path}?t=${Date.now()}`}
+              img2={`${imageSections.refillingonly[1].path}?t=${Date.now()}`}
               alt1="First Image"
               alt2="Second Image"
               description="This is a comparison between the two images."
@@ -368,8 +368,8 @@ const HomePage = ({ setModalHidden }) => {
       
       
         <BeforeAfterSlider 
-          beforeImage={`${imageSections.sidebyside2[0].path}`}
-          afterImage={`${imageSections.sidebyside2[1].path}`}
+          beforeImage={`${imageSections.sidebyside2[0].path}?t=${Date.now()}`}
+          afterImage={`${imageSections.sidebyside2[1].path}?t=${Date.now()}`}
           beforeAlt="Before Transformation"
           afterAlt="After Transformation"
         />
@@ -389,8 +389,8 @@ const HomePage = ({ setModalHidden }) => {
 
       <section id="cover-changing">
        <SideBySideImages  id="cover-changing"
-                img1={`${imageSections.coverchangingrefilling[0].path}`}
-                  img2={`${imageSections.coverchangingrefilling[1].path}`}
+                img1={`${imageSections.coverchangingrefilling[0].path}?t=${Date.now()}`}
+                  img2={`${imageSections.coverchangingrefilling[1].path}?t=${Date.now()}`}
                   alt1="First Image"
                   alt2="Second Image"
                   description="This is a comparison between the two images."
@@ -412,8 +412,8 @@ const HomePage = ({ setModalHidden }) => {
 
       <section id="sofa-servicing">
        <SideBySideImages id="sofa-servicing"
-                img1={`${imageSections.sofaservicing[0].path}`}
-                  img2={`${imageSections.sofaservicing[1].path}`}
+                img1={`${imageSections.sofaservicing[0].path}?t=${Date.now()}`}
+                  img2={`${imageSections.sofaservicing[1].path}?t=${Date.now()}`}
                   alt1="First Image"
                   alt2="Second Image"
                   description="This is a comparison between the two images."
@@ -434,8 +434,8 @@ const HomePage = ({ setModalHidden }) => {
         </section>
         
        <SideBySideImages 
-                img1={`${imageSections.sofaservicing[0].path}`}
-                  img2={`${imageSections.sofaservicing[1].path}`}
+                img1={`${imageSections.sofaservicing[0].path}?t=${Date.now()}`}
+                  img2={`${imageSections.sofaservicing[1].path}?t=${Date.now()}`}
                   alt1="First Image"
                   alt2="Second Image"
                   description="This is a comparison between the two images."
@@ -456,8 +456,8 @@ const HomePage = ({ setModalHidden }) => {
 
         
        <SideBySideImages 
-                img1={`${imageSections.sofaservicing4[0].path}`}
-                  img2={`${imageSections.sofaservicing4[1].path}`}
+                img1={`${imageSections.sofaservicing4[0].path}?t=${Date.now()}`}
+                  img2={`${imageSections.sofaservicing4[1].path}?t=${Date.now()}`}
                   alt1="First Image"
                   alt2="Second Image"
                   description="This is a comparison between the two images."
@@ -477,8 +477,8 @@ const HomePage = ({ setModalHidden }) => {
       </section>
 
          <SideBySideImages 
-                img1={`${imageSections.sofaservicing5[0].path}`}
-                  img2={`${imageSections.sofaservicing5[1].path}`}
+                img1={`${imageSections.sofaservicing5[0].path}?t=${Date.now()}`}
+                  img2={`${imageSections.sofaservicing5[1].path}?t=${Date.now()}`}
                   alt1="First Image"
                   alt2="Second Image"
                   description="This is a comparison between the two images."
